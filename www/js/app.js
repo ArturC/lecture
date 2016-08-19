@@ -19,16 +19,16 @@ angular.module('calculator', ['ionic', 'calculator.controllers', 'calculator.ser
 
   $stateProvider
 
-  .state('tab', {
-    url: '/tab',
-    templateUrl: 'templates/tabs.html'
+  .state('about', {
+    url: '/about',
+    templateUrl: 'templates/about.html'
   })
 
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('about.dash', {
+    url: '/calc',
     views: {
-      'tab-dash': {
+      'about-calc': {
         templateUrl: 'templates/calculator-home.html',
         controller: 'MainCtrl'
       }
@@ -36,6 +36,6 @@ angular.module('calculator', ['ionic', 'calculator.controllers', 'calculator.ser
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab');
+  $urlRouterProvider.otherwise('/about');
 
 });
