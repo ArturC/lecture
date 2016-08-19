@@ -1,0 +1,31 @@
+
+
+.about-page{
+	padding: 60px 40px 40px 40px;
+	height: 100%;
+}
+
+
+.about-page h1{
+
+}
+
+.about-page p{
+
+}
+
+
+.about-page a{
+
+}
+
+.bar.bar-header{
+	background-color: white !important;
+}
+
+.title img{
+	width: 100px;
+	height: auto;
+	padding-top: 12px;
+	display: inline-block;
+}
