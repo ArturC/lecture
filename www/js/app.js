@@ -25,14 +25,10 @@ angular.module('calculator', ['ionic', 'calculator.controllers', 'calculator.ser
   })
 
 
-  .state('about.dash', {
+  .state('calc', {
     url: '/calc',
-    views: {
-      'about-calc': {
-        templateUrl: 'templates/calculator-home.html',
-        controller: 'MainCtrl'
-      }
-    }
+    templateUrl: 'templates/calculator-home.html',
+    controller: 'MainCtrl'
   });
 
   // if none of the above states are matched, use this as the fallback
